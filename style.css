@@ -1,0 +1,13 @@
+.navbar{
+    background-color: #E8F1F5;
+}
+
+#logo{
+
+    width: 250px;
+    height: 80px;
+}
+
+#BtnRegister, #BtnLogin{
+    border-color:#005691 ;
+}
