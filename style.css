@@ -1,0 +1,27 @@
+body{
+    background-color: #FAFAFA;
+}
+
+header{
+    background-color: #E8F1F5;
+}
+
+#logo{
+    width: 250px;
+    height: 80px;
+}
+
+#BtnRegister, #BtnLogin{
+    border-color:#005691 ;
+    border-width: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: #005691;
+}
+
+hr{
+    border: 2px solid #004A7C;
+    margin: 1rem 0;
+}
+
+
+  
