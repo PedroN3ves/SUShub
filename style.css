@@ -36,3 +36,24 @@ hr{
     border: 4px solid #004A7C;
     border-radius: 40px;
 }
+
+.function-bar{
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
+
+.function-btn{
+    background-color: #005691;
+    border: 2px solid #004A7C;
+    border-radius: 30px;
+}
+
+.btn-content{
+    padding: 10px;
+}
+
+.function-btn p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
