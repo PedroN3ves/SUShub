@@ -1,18 +1,27 @@
+<<<<<<< HEAD
 body{
     background-color: #FAFAFA;
 }
 
 header{
+=======
+.navbar{
+>>>>>>> origin/main
     background-color: #E8F1F5;
 }
 
 #logo{
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     width: 250px;
     height: 80px;
 }
 
 #BtnRegister, #BtnLogin{
     border-color:#005691 ;
+<<<<<<< HEAD
     border-width: 3px;
     font-family: 'Poppins', sans-serif;
     color: #005691;
@@ -25,3 +34,6 @@ hr{
 
 
   
+=======
+}
+>>>>>>> origin/main
