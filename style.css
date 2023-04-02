@@ -1,27 +1,22 @@
-<<<<<<< HEAD
 body{
     background-color: #FAFAFA;
 }
 
 header{
-=======
+    background-color: #E8F1F5;
+}
+
 .navbar{
->>>>>>> origin/main
     background-color: #E8F1F5;
 }
 
 #logo{
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
     width: 250px;
     height: 80px;
 }
 
 #BtnRegister, #BtnLogin{
     border-color:#005691 ;
-<<<<<<< HEAD
     border-width: 3px;
     font-family: 'Poppins', sans-serif;
     color: #005691;
@@ -32,8 +27,12 @@ hr{
     margin: 1rem 0;
 }
 
-
-  
-=======
+#map{
+    margin-top: 60px;
+    margin-left: 86px;
+    margin-right: 86px;
+    width: 1180px;
+    height: 600px;
+    border: 4px solid #004A7C;
+    border-radius: 40px;
 }
->>>>>>> origin/main
