@@ -6,10 +6,6 @@ header{
     background-color: #E8F1F5;
 }
 
-.navbar{
-    background-color: #E8F1F5;
-}
-
 #logo{
     width: 250px;
     height: 80px;
@@ -56,4 +52,11 @@ hr{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: white;
+}
+
+#footer{
+    background-color: #E8F1F5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #005691;
 }
