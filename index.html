@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUShub</title>
+
   <!-- Link CDN CSS Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <!-- Link para o CSS do Leaflet (biblioteca para mapas interativos) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
   integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
   crossorigin=""/>
 
+  <!-- Link para o script do Leaflet -->
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
   integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
   crossorigin=""></script>
@@ -23,60 +26,81 @@
     <!-- Criação da Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid d-flex">
-        <!-- Localização da logo (resta inserir) -->
+        <!-- Localização da logo -->
             <a href="" class="nav-brand">
                 <img src="./img/Logo.png" id="logo" alt="">
             </a>
         <!-- Localização dos botões para registro e cadastro -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="MainNav">
+              <!-- Registro -->
                 <button class="btn me-md-2 fw-bold rounded-pill" type="button" id="BtnRegister">Registrar-se</button>
+              <!-- Cadastro -->
                 <button class="btn fw-bold rounded-pill" type="button" id="BtnLogin">Login</button>
             </div>
         </div>
     </nav>
     <hr>
   </header>
+
+  <!-- Conteúdo principal da página -->
   <main>
+    <!-- Mapa do Leaflet -->
     <div class="container-fluid" id="map"></div>
+
+    <!-- Barra de funções -->
     <div class="container">
       <section class="function-bar">
+        <!-- Botões para a barra de fuções -->
         <div class="button-group d-flex justify-content-around">
+
+          <!-- Botão encontrar UPA -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/Map Marker.png" alt="">
               <p>Encontrar UPA</p>
             </div> 
           </button>
         
+          <!-- Botão disponibilidade -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/Show Property.png" alt="">
               <p>Disponinilidade</p>
             </div> 
           </button>
         
+          <!-- Botão agendar visita -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/Calendar 7.png" alt="">
               <p>Agendar Visita</p> 
             </div>
           </button>
         
+          <!-- Botão horários -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/Clock.png" alt="">
               <p>Horários</p> 
             </div>
           </button>
         
+          <!-- Botão meus documentos -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/File.png" alt="">
               <p>Meus <br> Documentos</p>
             </div>
           </button>
         
+          <!-- Botão ajuda -->
           <button class="function-btn">
+            <!-- Conteúdo do botão -->
             <div class="btn-content">
               <img src="./img/Question Mark.png" alt="">
               <p>Ajuda</p> 
@@ -87,6 +111,7 @@
     </div>
   </main>
 
+  <!-- Rodapé -->
   <section id="footer">
     <div class="container-fluid p-1">
         <footer id="rights" >
