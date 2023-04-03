@@ -14,7 +14,7 @@ navigator.geolocation.getCurrentPosition((position)=>{
         maxZoom: 19, minZoom: 1, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         // adiciona a camada de mapa ao objeto de mapa Leaflet.js criado acima
     }).addTo(map);
-    
+
     // adiciona um marcador na posição atual do usuário no mapa
     L.marker([latitude, longitude]).addTo(map);
 })

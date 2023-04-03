@@ -1,3 +1,8 @@
+/* Define a fonte dos textos da página */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Define a cor de fundo do corpo da página como um tom claro de cinza */
 body{
     background-color: #FAFAFA;
@@ -18,8 +23,13 @@ header{
 #BtnRegister, #BtnLogin{
     border-color:#005691 ;
     border-width: 3px;
-    font-family: 'Poppins', sans-serif;
     color: #005691;
+}
+
+/* Define as aletrações de estilo quando o mouse passar sobre os botões */
+#BtnRegister:hover , #BtnLogin:hover{
+    background-color: #005691;
+    color: #E8F1F5;
 }
     
 /* Define as configurações de estilo para a linha horizontal */
@@ -27,7 +37,9 @@ hr{
     border: 2px solid #004A7C;
     margin: 1rem 0;
 }
-    
+
+/* Inseria Aqui */
+
 /* Define as configurações de estilo para o mapa na página */
 #map{
     margin-top: 60px;
@@ -59,7 +71,6 @@ hr{
     
 /* Define as configurações de estilo para o texto dentro dos botões na barra de funções */
 .function-btn p{
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: white;
 }
@@ -67,7 +78,122 @@ hr{
 /* Define as configurações de estilo para o rodapé da página */
 #footer{
     background-color: #E8F1F5;
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #005691;
+}
+
+
+.wraper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D6E4F0;
+    border: 1px solid #D6E4F0;
+    border-radius: 30px;
+    width: 1050px;
+    height: 600px;
+}
+
+.wraper::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+}
+
+.wraper .CloseIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+  
+#Welcome {
+    margin-right: auto;
+}
+
+#LoginForm{
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+}
+
+#RegisterForm{
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+}
+  
+.form-box{
+    margin-right: 50px; 
+}
+
+.form-group {
+    margin-top: 60px;
+    margin-left: 75px;
+}
+  
+.form-group label {
+    display: block;     
+    font-weight: bold;
+}
+
+.form-groupR {
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+.form-groupR label {
+    display: block;     
+    font-weight: bold;
+}
+
+.forgot{
+    margin-left: 75px;
+    margin-bottom: 15px;
+}
+
+.forgot a{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#BtnModalLogin{ 
+    margin-left: 175px;
+    border: 3px solid #005691;
+    color: #005691;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#BtnModalRegister{ 
+    margin-top: 15px;
+    margin-left: 75px;
+    border: 3px solid #005691;
+    color: #005691;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#BtnModalRegister:hover , #BtnModalLogin:hover{
+    background-color: #005691;
+    color: #F8F8F8;
 }

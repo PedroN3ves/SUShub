@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,14 +33,103 @@
         <!-- Localização dos botões para registro e cadastro -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="MainNav">
               <!-- Registro -->
-                <button class="btn me-md-2 fw-bold rounded-pill" type="button" id="BtnRegister">Registrar-se</button>
+                <button class="btn fw-bold rounded-pill" type="button" data-toggle="modal" data-target="#registerModal" id="BtnRegister">Registrar-se</button>
               <!-- Cadastro -->
-                <button class="btn fw-bold rounded-pill" type="button" id="BtnLogin">Login</button>
+                <button class="btn me-md-2 fw-bold rounded-pill" type="button" data-toggle="modal" data-target="#loginModal" id="BtnLogin">Login</button>
             </div>
         </div>
     </nav>
     <hr>
   </header>
+
+  <!-- Modal Login -->
+  <div id="ModalLogin">
+  <div class="wraper container">
+    <button type="button" class="CloseIcon" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="close-modal" aria-hidden="true">&times;</span>
+    </button>
+
+    <h2 id="Welcome">Bem Vindo(a) <br> Como podemos te ajudar <br>  hoje?</h2>
+    <div class="form-box login">
+      <h2 class="text-center">Login</h2>
+      <form id="LoginForm" action="#">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+            
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </div>
+    
+        <div class="forgot">
+          <a href="#">Esqueci minha senha</a>
+        </div>
+    
+        <button class="btn fw-bold rounded-pill" id="BtnModalLogin" type="submit">Login</button>
+    
+      </form>
+    </div>    
+  </div>
+  </div>
+
+    <!-- Modal Register -->
+  <div class="ModalRegister">
+  <div class="wraper container">
+    <button type="button" class="CloseIcon" class="close" data-dismiss="modal" aria-label="Close">
+      <span class="close-modal" aria-hidden="true">&times;</span>
+    </button>
+
+    <h2 id="Welcome">Bem Vindo(a) <br> Como podemos te ajudar <br>  hoje?</h2>
+    <div class="form-box register">
+      <h2 class="text-center">Registrar-se</h2>
+      <form id="RegisterForm" action="#">
+        <div class="form-groupR">
+          <label for="email">Email</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+
+        <div class="form-groupR">
+          <label for="email">Confirmar Email</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+
+        <div class="form-groupR">
+          <label for="password">Senha</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </div>
+            
+        <div class="form-groupR">
+          <label for="password">Confirmar Senha</label>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </div>
+    
+        <button class="btn fw-bold rounded-pill" id="BtnModalRegister" type="submit">Registrar-se</button>
+    
+      </form>
+    </div>    
+  </div>
+  </div>
+
 
   <!-- Conteúdo principal da página -->
   <main>
@@ -50,7 +139,7 @@
     <!-- Barra de funções -->
     <div class="container">
       <section class="function-bar">
-        <!-- Botões para a barra de fuções -->
+        <!-- Botões para a barra de funções -->
         <div class="button-group d-flex justify-content-around">
 
           <!-- Botão encontrar UPA -->
@@ -118,8 +207,14 @@
             <p class="text-center">© Todos os direitos reservados</p>
         </footer>
     </div>
-</section>
+  </section>
+
+
+
 
   <script src="./script.js"></script>
+  <script src="./modal.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
